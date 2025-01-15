@@ -5,8 +5,10 @@ import com.assignment.apitodolist.model.UserRegisterRequest;
 import com.assignment.apitodolist.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+@Service
 public class UserService {
    
    private UserRepository userRepository;
