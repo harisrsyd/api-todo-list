@@ -29,11 +29,11 @@ public class UserService {
          throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Email already registered");
       }
       
-      User user = new User();
-      user.setUsername(request.getUsername());
-      user.setName(request.getName());
-      user.setEmail(request.getEmail());
-      user.setPassword(request.getPassword());
+      User user = new User()
+          .setUsername(request.getUsername())
+          .setName(request.getName())
+          .setEmail(request.getEmail())
+          .setPassword(request.getPassword());
       
       userRepository.save(user);
    }

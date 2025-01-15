@@ -1,12 +1,16 @@
 package com.assignment.apitodolist.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.experimental.Accessors;
 import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import java.util.Date;
 
 @Entity
+@Getter
+@Setter
 @Accessors(chain = true)
 @Table(name = "boards")
 public class Board {
